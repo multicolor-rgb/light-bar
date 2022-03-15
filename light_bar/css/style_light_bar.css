@@ -1,0 +1,160 @@
+@import url("https://use.fontawesome.com/releases/v5.7.2/css/all.css");
+
+#light-bar {
+	font-family: "Poppins", sans-serif;
+	background: #132238;
+	width: 300px;
+	height: 100vh;
+	position: fixed;
+	right: 0;
+	top: 0;
+	margin-right: -300px;
+	z-index: 9000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+	padding: 20px 0px;
+	box-sizing: border-box;
+	transition: all 250ms linear;
+	font-size: 14px !important;
+	text-transform: uppercase;
+	letter-spacing: 1px !imprtant;
+	color: #fff !important;
+}
+
+#light-bar p {
+	color: #fff;
+}
+
+#light-bar .menu-bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	align-self: center;
+	width: 100%;
+}
+
+#light-bar .menu-bar li {
+	padding: 10px 0;
+	width: 100%;
+	transition: all 250ms ease;
+	text-align: center;
+}
+#light-bar .menu-bar li:hover {
+	background: #000;
+}
+
+#light-bar .menu-bar a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+#light-bar .user-info {
+	flex-grow: 1;
+}
+
+#light-bar .username {
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 15px;
+}
+
+#light-bar .user-user {
+	align-self: flex-start;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+	box-shadow: 1px 1px 10px #000;
+	border-radius: 50%;
+	background-color: #fafafa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: #ddd;
+}
+
+#light-bar .container {
+	width: 80%;
+	max-width: 1200px;
+	display: flex;
+	height: 100%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+#light-bar .container div {
+	width: 33%;
+	background: #000;
+	padding: 10px;
+	height: 440px;
+}
+
+.light-hide {
+	margin-right: 0 !important;
+	opacity: 1;
+	transition: all 250ms ease-in-out;
+}
+
+.light-button-bar {
+	position: absolute;
+	top: 50%;
+	width: 40px;
+	height: 40px;
+	border: 0;
+	color: #fff;
+	background: #132238;
+	right: 300px;
+	border-radius: 5px 0px 0px 5px;
+}
+
+.menus-all {
+	flex-grow: 12;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+#light-bar .settings {
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	margin: 0 auto;
+}
+
+#light-bar > .settings div {
+	flex: 1;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+#light-bar > .settings a {
+	color: #fff;
+}
+
+#light-bar > .close {
+	color: #fff;
+	width: 100%;
+	text-align: right;
+	padding: 10px 30px;
+	box-sizing: border-box;
+}
+
+#light-bar .settings {
+	padding: 20px;
+}
+
+@media (min-width: 960px) {
+	#light-bar > .close {
+		display: none;
+	}
+}
